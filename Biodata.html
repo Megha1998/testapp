@@ -2,7 +2,7 @@
 <html>
  <head><title> My Resume </title>
 </head>
-<body>
+<body  class="exp">
 <table border="2" align="center" width="60%">
 <th> <h1>Welcome To My Resume </h1></th></tr>
 <tr><th align="left"> Megha Bhattacharjee
@@ -53,15 +53,22 @@ Email:bhattacharjeemegha7@gmail.com
 <br>
 <hr style="background:black">
 <br><br>
-	<center>
+<center>
   <button style="background: black">
    <a href="#" class="btn" style="color:white" >
       <span></span>
        <span></span>
         <span></span>
-		       DARK MODE
+	 DARK MODE
     </a>
   </button>
 </center>
 </body>
+<script>
+	document.querySelector('.btn').addEventListener('click',function()     
+	{
+    	document.querySelector('.exp').style.background='var(--bg-color)';
+   		document.querySelector('.intro-section spad').style.background='var(--bg-color)';  
+	});
+</script>
 </html>
